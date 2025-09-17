@@ -1,0 +1,17 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title><%= @page_title %></title>
+  </head>
+  <body>
+    <p>Sort by name: <a href="/?sort=asc">Ascending | <a href="/?sort=des">Descending</p>
+
+    <ul>
+      <% @filenames.each do |name| %>
+        <li><a href="<%= name %>"><%= name.split('.')[0]%></li>
+      <% end %>
+    </ul>
+
+  </body>
+</html>
