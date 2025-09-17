@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+
+ruby '3.2.8'
+
+gem 'webrick'
+gem 'rackup'
