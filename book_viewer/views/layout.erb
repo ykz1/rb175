@@ -22,7 +22,7 @@
           <a class="pure-menu-heading" href="/">Table of Contents</a>
           
           <ul class="pure-menu-list">
-            <% @contents.each_with_index do |chapter, number| %>
+            <% @list_of_chapters.each_with_index do |chapter, number| %>
               <li class="pure-menu-item">
                 <a href="/chapters/<%= number + 1 %>" class="pure-menu-link"><%= chapter %></a>
               </li>
