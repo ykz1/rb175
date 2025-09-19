@@ -1,0 +1,17 @@
+<!-- views/layout.erb -->
+
+<!doctype html>
+
+<html>
+  <head>
+    <title><%= @title %></title>
+  </head>
+
+  <body>
+    <%= yield %>
+
+    <p>There are <%= @user_count %> users with a total of <%= @interest_count %> interests.</p>
+
+    <p><a href="/">Home</a></p>
+  </body>
+</html>

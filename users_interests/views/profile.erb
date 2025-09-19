@@ -1,0 +1,16 @@
+<!-- views/profile.erb -->
+
+<h1><%= @title %></h1>
+
+<h4>Email</h4>
+<p><%= @email %></p>
+
+<h4>Interests</h4>
+<p><%= @interests %></p>
+
+<h4>Other users</h4>
+<ul>
+  <% @other_users.each do |name, data| %>
+    <li><a href="/users/<%= name %>"><%= name %></a></li>
+  <% end %>
+</ul>

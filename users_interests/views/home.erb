@@ -1,0 +1,8 @@
+<!-- views/home.erb -->
+<h4>User profiles</h4>
+
+<ul>
+  <% @users.each do |name, data| %>
+    <li><a href="/users/<%= name %>"><%= name %></a></li>
+  <% end %>
+</ul>
